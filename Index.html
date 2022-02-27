@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <section id="game-info">
+        <h1>Memory Game</h1>
+        <div class="game-info">
+            <div id="time"><span id="min-optional">0</span><span id="min">0</span>:<span id="sec-optional">0</span><span id="sec">0</span></div>
+            <div class="count">0</div>
+        </div>
+    </section>
+
+    <section id="game-option">
+        <h3>Choose grid size to start game👇</h3>
+
+        <button class="byfour btns">4 x 4</button>
+        <button class="bythree btns">3 x 2</button>
+        <button class="bytwo btns">2 x 2</button>
+    </section>
+
+    <section id="game-game" class="display-none">
+        <div id="game-grid-container">
+        </div>
+    </section>
+
+    <section id="game-ended" class="display-none">
+        <h1>Congrats! You've Finished!✨</h1>
+        <p>Time taken: <span id="item-taken"></span></p>
+        <p>Card flips: <span id="card-flips"></span></p>
+
+        <p>Best score: <span id="best-time">time: </span> || <span id="best-flip">flips: </span></p>
+
+        <button id="play-again-btn">Play again</button>
+    </section>
+
+    <script src="./App.js"></script>
+</body>
+</html>

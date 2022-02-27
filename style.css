@@ -1,0 +1,99 @@
+body{
+    width: 100%;
+}
+section{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+
+.game-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.byfours{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+}
+.bythrees{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+}
+.bytwos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+}
+
+.item{
+    width: 4.5rem;
+    height: 4.5rem;
+    justify-items: center;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.byfours > .item{
+    width: 2.7rem;
+    height: 2.7rem;
+}
+
+.hide:hover{
+    background-color: rgb(122, 252, 252);
+}
+
+.hide{
+    background-color: rgba(0, 0, 0, 0.795);
+    cursor: pointer;
+}
+.hide > img{
+    visibility: hidden;
+}
+
+
+
+/* game-option */
+
+#game-option{
+    width: 215px;
+    height: 215px;
+    padding: 1rem 1rem;
+    background-color: rgb(124, 248, 248);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#game-option > button{
+    padding: 5px 10px;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+#game-ended{
+    width: 215px;
+    height: 215px;
+    padding: 0.5rem 1rem;
+    background-color: rgb(124, 248, 248);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#game-ended > button{
+    padding: 5px 10px;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.display-none{
+    display: none !important;
+}
+
